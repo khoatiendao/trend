@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: palevioletred;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+}
+
+.dad {
+    display :none;
+    /* animation: appear-animation 1s ease-in-out forwards; */
+    
+}
+
+.container {
+    display: none;
+}
+
+.dad_lyric {
+    display: grid;  
+    justify-content: center;
+    align-content: center;
+    line-height: 4rem;
+}
+
+.dad_container {
+    width: 100%;
+    height: 100vh;
+    display: grid;  
+    justify-content: center;
+    align-content: center;
+}
+
+#showButton {
+    color: #fff;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    padding: 8px 22px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+#showButton:active {
+    transform: scale(1.2);
+}
+
+.first {
+    text-align: center;
+}
+
+.message {
+    display: grid;  
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    height: 100vh;
+    line-height: 4rem;
+}
+
+.message-2 {
+    text-align: center;
+}
+
+.message {
+    animation: visible-animation 12s ease-in-out forwards;
+}
+
+.lyric-1,
+.lyric-2,
+.lyric-3,
+.lyric-4 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#my-letter-1 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+#my-letter-2 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 0.7s;
+    margin-left: 8px;
+}
+
+#my-letter-3 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 1.2s;
+    margin-left: 8px;
+}
+
+#my-letter-4 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 1.7s;
+    margin-left: 8px;
+}
+
+#my-letter-5 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 2.2s;
+    margin-left: 8px;
+}
+
+#my-letter-6 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 2.7s;
+    margin-left: 8px;
+}
+
+#my-letter-7 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 3.2s;
+    margin-left: 8px;
+}
+
+#my-letter-8 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 3.7s;
+    margin-left: 8px;
+}
+
+#my-letter-9 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 4.2s;
+    margin-left: 8px;
+}
+
+#my-letter-10 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 4.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_1 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+#my-lyric-2-letter_2 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 5.4s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_3 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 5.8s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_4 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 6.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_5 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 6.6s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_6 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 7s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_7 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 7.4s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_8 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 7.8s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_9 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 8.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_10 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 8.6s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_11 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 9s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_12 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 9.4s;
+    margin-left: 8px;
+}
+
+#my-lyric-2-letter_13 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 9.8s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_1 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 11.7s;
+}
+
+#my-lyric-3-letter_2 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 12.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_3 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 12.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_4 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 13.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_5 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 13.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_6 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 14.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_7 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 14.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_8 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 15.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_9 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 15.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-3-letter_10 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 16.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_1 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 16.7s;
+}
+
+#my-lyric-4-letter_2 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 17.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_3 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 17.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_4 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 18.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_5 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 18.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_6 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 19.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_7 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 19.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_8 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 20.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_9 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 20.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_10 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 21.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_11 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 21.7s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_12 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 22.2s;
+    margin-left: 8px;
+}
+
+#my-lyric-4-letter_13 {
+    display: inline-block;
+    opacity: 0;
+    animation: lyric-1-animation 1s ease-in-out forwards;
+    animation-delay: 22.7s;
+    margin-left: 8px;
+}
+
+@keyframes lyric-1-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }   
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes visible-animation {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes appear-animation {
+    0% {
+        display: block;
+    }
+    100% {
+        display: block;
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(250vh);
+    }
+}
+
+.heart {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    transform: translateY(-50%);
+    animation: fall 1s ease-in infinite;
+}
+
+/* responesive */
+/* tablet */
+@media only screen and (max-width: 768px) {
+    .message,
+    .dad {
+        width: 100%;
+        font-size: 9px;
+}
+}
+
+
+/* Iphone */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .message,
+    .dad {
+        font-size: 14px;
+}
+}
+
+/* Samsung */
+@media only screen and (max-width: 360px) {
+    .message,
+    .dad {
+        font-size: 7px;
+}
+
+    .first {
+        transform: translateY(110px);
+    }
+}

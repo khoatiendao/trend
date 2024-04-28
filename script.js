@@ -24,8 +24,8 @@ document.getElementById("showButton").addEventListener("click", function() {
 // text typing 
 var textmessage_1 = document.getElementById("text-message_1")
 var textmessage_2 = document.getElementById("text-message_2")
-var message_string = "Được làm trọn bằng cả tấm lòng của Khoa";
-var message_string_2 = "Đặc biệt gửi đến Nhi Cute";
+var message_string = "Được làm trọn bằng cả tấm lòng của ...";
+var message_string_2 = "Đặc biệt gửi đến ...";
 
 let messLength = 0;
 let messIndex = 0;
